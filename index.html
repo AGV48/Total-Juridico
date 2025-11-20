@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Juridico Abogados</title>
+    <link rel="shortcut icon" href="media/icono.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="menu-container">
+            <button class="menu-button">☰</button>
+            <nav class="dropdown-menu">
+                <ul>
+                    <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+                    <li><a href="#horarios">Horarios de atención</a></li>
+                    <li><a href="#conocenos">Conócenos más</a></li>
+                    <li><a href="#procesos">Procesos que llevamos</a></li>
+                    <li><a href="pages/agendar-cita.html">Agenda tu cita</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img src="media/icono.png" alt="Total Jurídico Abogados Logo" class="logo">
+        <h1 class="title">Total Jurídico Abogados</h1>
+    </header>
+
+    
+    <div class="container-img_firma">
+        <img src="media/firma.jpg" alt="Firma de Total Jurídico Abogados" class="firma-image">
+    </div>
+    
+    <div class="message">
+        <p>¡¡Llevamos su proceso de la mejor manera!!</p>
+    </div>
+
+    <div class="info">
+        <div class="links">
+
+            <div class="schedule">
+                <button onclick="location.href='pages/agendar-cita.html'">Agenda tu cita aquí</button>
+            </div>
+            <div class="stages">
+                <button>Etapas del proceso</button>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <div class="text">
+                <p>Contáctanos:</p>
+            </div>
+            <div class="icons">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot Asistente Virtual -->
+    <div class="chatbot-container">
+        <button class="chatbot-button" id="chatbot-toggle">💬</button>
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <img src="media/icono.png" alt="Asistente">
+                <div class="chatbot-info">
+                    <h3>Asistente Virtual</h3>
+                    <p>¿En qué puedo ayudarte?</p>
+                </div>
+                <button class="chatbot-close" id="chatbot-close">×</button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="chat-message bot">
+                    <div class="message-bubble">
+                        ¡Hola! Soy tu asistente virtual de Total Jurídico Abogados. ¿En qué puedo ayudarte hoy?
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-input-area">
+                <input type="text" class="chatbot-input" id="chatbot-input" placeholder="Escribe tu mensaje...">
+                <button class="chatbot-send" id="chatbot-send">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

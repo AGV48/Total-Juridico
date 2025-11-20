@@ -616,6 +616,209 @@ button:active {
     font-weight: 500;
 }
 
+/* ===== Página Etapas del Proceso ===== */
+.process-intro {
+    max-width: 900px;
+    margin: 40px auto 30px;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(11,53,102,0.03), rgba(201,168,74,0.05));
+    border-radius: 12px;
+    border: 1px solid rgba(11,53,102,0.08);
+}
+
+.process-intro h2 {
+    color: var(--primary);
+    font-size: 32px;
+    margin: 0 0 16px 0;
+    font-weight: 700;
+}
+
+.process-intro p {
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Timeline horizontal mini */
+.stages-timeline {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.stage-mini {
+    min-width: 120px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--primary), #1a5fa0);
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(11,53,102,0.15);
+}
+
+.stage-mini p:first-child {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    color: var(--accent);
+}
+
+.stage-mini p:last-child {
+    font-size: 12px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.timeline-arrow {
+    color: var(--primary);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Etapas detalladas */
+.stages-detailed {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.stage-detail {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(11,53,102,0.08);
+    border: 1px solid rgba(11,53,102,0.06);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.stage-detail:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(11,53,102,0.12);
+}
+
+.stage-number {
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--accent), #d4b565);
+    color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(201,168,74,0.3);
+    border: 3px solid white;
+}
+
+.stage-detail h3 {
+    color: var(--primary);
+    font-size: 26px;
+    margin: 20px 0 20px 0;
+    font-weight: 700;
+}
+
+.stage-content p {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0 0 12px 0;
+}
+
+.stage-content p strong {
+    color: var(--primary);
+    font-size: 16px;
+}
+
+.stage-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 20px 0;
+}
+
+.stage-content li {
+    padding: 10px 0 10px 30px;
+    position: relative;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.stage-content li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.stage-content p:last-child {
+    background: linear-gradient(90deg, rgba(11,53,102,0.05), transparent);
+    padding: 12px 16px;
+    border-left: 4px solid var(--accent);
+    margin-top: 20px;
+    font-style: italic;
+    color: var(--primary);
+}
+
+/* Sección CTA */
+.cta-section {
+    max-width: 800px;
+    margin: 60px auto 40px;
+    padding: 40px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary), #1a5fa0);
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(11,53,102,0.25);
+    color: white;
+}
+
+.cta-section h2 {
+    font-size: 32px;
+    margin: 0 0 16px 0;
+    font-weight: 700;
+}
+
+.cta-section p {
+    font-size: 18px;
+    margin: 0 0 24px 0;
+    opacity: 0.95;
+}
+
+.cta-section button {
+    background: white;
+    color: var(--primary);
+    border: 2px solid white;
+    font-size: 18px;
+    padding: 16px 40px;
+}
+
+.cta-section button:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+    transform: translateY(-2px) scale(1.05);
+}
+
+.cta-section a {
+    text-decoration: none;
+}
+
 /* ===== Responsiveness ===== */
 @media (max-width: 900px) {
   .header {
@@ -659,6 +862,47 @@ button:active {
     right: 5vw;
     left: auto;
   }
+  
+  /* Etapas proceso responsive */
+  .process-intro {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .process-intro h2 {
+    font-size: 24px;
+  }
+  
+  .stages-timeline {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .timeline-arrow {
+    transform: rotate(90deg);
+    font-size: 20px;
+  }
+  
+  .stage-detail {
+    padding: 30px 20px;
+  }
+  
+  .stage-detail h3 {
+    font-size: 22px;
+  }
+  
+  .cta-section {
+    margin: 40px 20px 20px;
+    padding: 30px 20px;
+  }
+  
+  .cta-section h2 {
+    font-size: 24px;
+  }
+  
+  .cta-section p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -692,5 +936,65 @@ button:active {
   .chatbot-window {
     height: 70vh;
     bottom: 70px;
+  }
+  
+  /* Etapas proceso móvil */
+  .process-intro {
+    margin: 10px;
+    padding: 16px;
+  }
+  
+  .process-intro h2 {
+    font-size: 20px;
+  }
+  
+  .process-intro p {
+    font-size: 14px;
+  }
+  
+  .stage-mini {
+    min-width: 100px;
+    padding: 10px 12px;
+  }
+  
+  .stage-detail {
+    padding: 25px 16px;
+  }
+  
+  .stage-number {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    top: -12px;
+    left: 20px;
+  }
+  
+  .stage-detail h3 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  
+  .stage-content p,
+  .stage-content li {
+    font-size: 14px;
+  }
+  
+  .cta-section {
+    margin: 30px 10px 20px;
+    padding: 24px 16px;
+  }
+  
+  .cta-section h2 {
+    font-size: 20px;
+  }
+  
+  .cta-section p {
+    font-size: 14px;
+  }
+  
+  .cta-section button {
+    font-size: 16px;
+    padding: 14px 30px;
+    width: 100%;
   }
 }
